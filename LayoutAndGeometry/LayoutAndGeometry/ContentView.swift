@@ -96,7 +96,7 @@ struct ContentView5: View {
     var body: some View {
         GeometryReader { fullView in
             ScrollView(.vertical) {
-                ForEach(0..<50) { index in
+                ForEach(0..<2000) { index in
                     GeometryReader { geo in
                         Text("Row #\(index)")
                             .font(.title)
