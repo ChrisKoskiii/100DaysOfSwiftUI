@@ -10,6 +10,9 @@
 		9E79EB0D2850C38A00D19A3F /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79EB0C2850C38A00D19A3F /* Flower.swift */; };
 		9E79EB0F285212EA00D19A3F /* ImagePaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79EB0E285212EA00D19A3F /* ImagePaint.swift */; };
 		9E79EB112858FB8E00D19A3F /* drawingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79EB102858FB8E00D19A3F /* drawingGroup.swift */; };
+		9E79EB132859018B00D19A3F /* SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79EB122859018B00D19A3F /* SpecialEffects.swift */; };
+		9E79EB15285B7EEA00D19A3F /* AnimatableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79EB14285B7EEA00D19A3F /* AnimatableData.swift */; };
+		9E79EB17285B836500D19A3F /* AnimatablePairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E79EB16285B836500D19A3F /* AnimatablePairView.swift */; };
 		9E8B8E322844ED4500FF2F17 /* InsettableShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B8E312844ED4500FF2F17 /* InsettableShape.swift */; };
 		9EA32D60284131D900986323 /* DrawingDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA32D5F284131D900986323 /* DrawingDemoApp.swift */; };
 		9EA32D62284131D900986323 /* CustomPathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA32D61284131D900986323 /* CustomPathsView.swift */; };
@@ -22,6 +25,9 @@
 		9E79EB0C2850C38A00D19A3F /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
 		9E79EB0E285212EA00D19A3F /* ImagePaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePaint.swift; sourceTree = "<group>"; };
 		9E79EB102858FB8E00D19A3F /* drawingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawingGroup.swift; sourceTree = "<group>"; };
+		9E79EB122859018B00D19A3F /* SpecialEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffects.swift; sourceTree = "<group>"; };
+		9E79EB14285B7EEA00D19A3F /* AnimatableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableData.swift; sourceTree = "<group>"; };
+		9E79EB16285B836500D19A3F /* AnimatablePairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairView.swift; sourceTree = "<group>"; };
 		9E8B8E312844ED4500FF2F17 /* InsettableShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsettableShape.swift; sourceTree = "<group>"; };
 		9EA32D5C284131D900986323 /* DrawingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA32D5F284131D900986323 /* DrawingDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDemoApp.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				9EA32D5F284131D900986323 /* DrawingDemoApp.swift */,
+				9E79EB14285B7EEA00D19A3F /* AnimatableData.swift */,
+				9E79EB16285B836500D19A3F /* AnimatablePairView.swift */,
+				9E79EB122859018B00D19A3F /* SpecialEffects.swift */,
 				9E79EB0C2850C38A00D19A3F /* Flower.swift */,
 				9E79EB0E285212EA00D19A3F /* ImagePaint.swift */,
 				9EA32D61284131D900986323 /* CustomPathsView.swift */,
@@ -152,13 +161,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E79EB132859018B00D19A3F /* SpecialEffects.swift in Sources */,
 				9E8B8E322844ED4500FF2F17 /* InsettableShape.swift in Sources */,
+				9E79EB15285B7EEA00D19A3F /* AnimatableData.swift in Sources */,
 				9E79EB112858FB8E00D19A3F /* drawingGroup.swift in Sources */,
 				9EA32D62284131D900986323 /* CustomPathsView.swift in Sources */,
 				9E79EB0D2850C38A00D19A3F /* Flower.swift in Sources */,
 				9EA32D6E2841675700986323 /* PathsVsShapes.swift in Sources */,
 				9EA32D60284131D900986323 /* DrawingDemoApp.swift in Sources */,
 				9E79EB0F285212EA00D19A3F /* ImagePaint.swift in Sources */,
+				9E79EB17285B836500D19A3F /* AnimatablePairView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
