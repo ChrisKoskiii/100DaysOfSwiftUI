@@ -50,7 +50,6 @@ struct DrawingGroupView: View {
     VStack {
       ColorCyclingCircle(amount: colorCycle)
         .frame(width: 300, height: 300)
-      
       Slider(value: $colorCycle)
     }
   }
