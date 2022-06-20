@@ -8,32 +8,40 @@
 import SwiftUI
 
 struct DetailView: View {
-  var name: String
-  var description: String
+  @ObservedObject var vm: ActivitiesViewModel
+  var activity: Activity
   
-  @State var timesCompleted: Int
   var body: some View {
     Form {
       Section{
-        Text(name)
+        Text(activity.title)
       } header: {
         Text("Activity")
       }
       Section {
-        Text(description)
+        Text(activity.description)
       } header: {
         Text("Description")
       }
       Section {
-        Stepper("Times Completed: \(timesCompleted)", value: $timesCompleted)
+        Text("Completion Count: \(activity.timesCompleted)")
+        Button("Mark Completed") {
+          var newActivity = activity
+          newActivity.timesCompleted += 1
+          
+          if let index = vm.activities.firstIndex(of: activity) {
+            vm.activities[index] = newActivity
+          }
+        }
       }
     }
   }
 }
 
 struct DetailView_Previews: PreviewProvider {
+  
   static var previews: some View {
-    DetailView(name: "Example", description: "Example", timesCompleted: 5)
+    DetailView(vm: ActivitiesViewModel(), activity: Activity(title: "Running", description: "Run twice a week"))
   }
 }
 

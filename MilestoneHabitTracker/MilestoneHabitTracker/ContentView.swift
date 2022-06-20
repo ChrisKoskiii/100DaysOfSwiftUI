@@ -16,9 +16,19 @@ struct ContentView: View {
     NavigationView {
       List(vm.activities) { activity in
         NavigationLink {
-          DetailView(name: activity.title, description: activity.description, timesCompleted: activity.timesCompleted)
+          DetailView(vm: vm, activity: activity)
         } label: {
-          Text(activity.title)
+          HStack {
+            Text(activity.title)
+            Spacer()
+            Text(String(activity.timesCompleted))
+              .font(.caption)
+              .padding(5)
+              .frame(minWidth: 50)
+              .background(color(for: activity))
+              .clipShape(Capsule())
+            
+          }
         }
       }
       .navigationTitle("Habits")
@@ -46,6 +56,20 @@ struct ContentView: View {
   
   func delete(at offsets: IndexSet) {
     vm.activities.remove(atOffsets: offsets)
+  }
+  
+  func color(for activity: Activity) -> Color {
+    if activity.timesCompleted < 3 {
+      return .red
+    } else if activity.timesCompleted < 10 {
+      return .orange
+    } else if activity.timesCompleted < 20 {
+      return .green
+    } else if activity.timesCompleted < 30 {
+      return .blue
+    } else {
+      return .indigo
+    }
   }
 }
 
