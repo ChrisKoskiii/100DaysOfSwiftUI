@@ -11,7 +11,7 @@ struct CheckoutView: View {
   @ObservedObject var order: Order
   @State private var confirmationMessage = ""
   @State private var showingConfirmation = false
-  
+  @State private var showingNoConnection = false
   var body: some View {
     ScrollView {
       VStack {
@@ -40,6 +40,9 @@ struct CheckoutView: View {
     } message: {
       Text(confirmationMessage)
     }
+    .alert("No internet connection, please try again.", isPresented:  $showingNoConnection) {
+      Button("OK") { }
+    }
   }
   
   func placeOrder() async {
@@ -62,6 +65,7 @@ struct CheckoutView: View {
       confirmationMessage = "Your order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on its way!"
       showingConfirmation = true
     } catch {
+      showingNoConnection = true
       print("Checkout failed")
     }
   }
