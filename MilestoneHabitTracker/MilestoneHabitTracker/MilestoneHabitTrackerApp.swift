@@ -11,7 +11,7 @@ import SwiftUI
 struct MilestoneHabitTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

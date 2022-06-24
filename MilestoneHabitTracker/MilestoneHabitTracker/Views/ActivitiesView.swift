@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ActivitiesView: View {
   @StateObject var vm = ActivitiesViewModel()
   
   @State private var showingSheet = false
@@ -75,6 +75,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    ActivitiesView()
   }
 }
