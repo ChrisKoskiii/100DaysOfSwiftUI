@@ -7,14 +7,12 @@
 
 import Foundation
 
-class Order: ObservableObject, Codable {
+class SharedOrder: ObservableObject, Codable {
   
   static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
   
   var hasValidAddress: Bool {
-    if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
-      return false
-    } else if name.hasPrefix(" ") || streetAddress.hasPrefix(" ") || city.hasPrefix(" ") || zip.hasPrefix(" ") {
+    if name.isReallyEmpty || streetAddress.isReallyEmpty || city.isReallyEmpty || zip.isReallyEmpty {
       return false
     }
     return true
