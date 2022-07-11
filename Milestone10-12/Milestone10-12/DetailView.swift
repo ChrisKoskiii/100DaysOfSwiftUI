@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
-  var user: FetchedResults<CachedUser>.Element
+  var user: CachedUser
 
   var body: some View {
     List {
@@ -42,7 +42,9 @@ struct DetailView: View {
       Text(user.about ?? "Unknown")
         .padding(4)
       Section("Friends") {
-        Text("Unknown")
+        ForEach(user.friendsArray) { friend in
+          Text(friend.wrappedName)
+        }
       }
     }
   }

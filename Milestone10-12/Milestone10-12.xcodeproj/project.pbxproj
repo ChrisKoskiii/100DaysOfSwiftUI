@@ -12,7 +12,6 @@
 		9ECAD71C2878C5F80018A939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ECAD71B2878C5F80018A939 /* Assets.xcassets */; };
 		9ECAD71F2878C5F80018A939 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ECAD71E2878C5F80018A939 /* Preview Assets.xcassets */; };
 		9ECAD7262879BF7E0018A939 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECAD7252879BF7D0018A939 /* User.swift */; };
-		9ECAD7282879BFED0018A939 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECAD7272879BFED0018A939 /* APIManager.swift */; };
 		9ECAD72A287B566E0018A939 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECAD729287B566E0018A939 /* DetailView.swift */; };
 		9ECAD72D287C3A440018A939 /* Milestone10-12.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9ECAD72B287C3A440018A939 /* Milestone10-12.xcdatamodeld */; };
 		9ECAD72F287C3B9E0018A939 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECAD72E287C3B9E0018A939 /* DataController.swift */; };
@@ -29,7 +28,6 @@
 		9ECAD71B2878C5F80018A939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ECAD71E2878C5F80018A939 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9ECAD7252879BF7D0018A939 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		9ECAD7272879BFED0018A939 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		9ECAD729287B566E0018A939 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		9ECAD72C287C3A440018A939 /* Milestone10-12.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Milestone10-12.xcdatamodel"; sourceTree = "<group>"; };
 		9ECAD72E287C3B9E0018A939 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				9ECAD72E287C3B9E0018A939 /* DataController.swift */,
 				9ECAD7192878C5F60018A939 /* ContentView.swift */,
 				9ECAD729287B566E0018A939 /* DetailView.swift */,
-				9ECAD7272879BFED0018A939 /* APIManager.swift */,
 				9ECAD7252879BF7D0018A939 /* User.swift */,
 				9ECAD72B287C3A440018A939 /* Milestone10-12.xcdatamodeld */,
 				9ECAD71B2878C5F80018A939 /* Assets.xcassets */,
@@ -168,7 +165,6 @@
 				9ECAD735287C45A70018A939 /* CachedFriend+CoreDataProperties.swift in Sources */,
 				9ECAD737287C45A70018A939 /* CachedUser+CoreDataProperties.swift in Sources */,
 				9ECAD72D287C3A440018A939 /* Milestone10-12.xcdatamodeld in Sources */,
-				9ECAD7282879BFED0018A939 /* APIManager.swift in Sources */,
 				9ECAD71A2878C5F60018A939 /* ContentView.swift in Sources */,
 				9ECAD7182878C5F60018A939 /* Milestone10_12App.swift in Sources */,
 				9ECAD736287C45A70018A939 /* CachedUser+CoreDataClass.swift in Sources */,
